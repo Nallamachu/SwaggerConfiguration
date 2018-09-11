@@ -68,3 +68,4 @@ public class HelloController {
 	}
 }
 ```
+![Swagger-UI](https://github.com/Nallamachu/SwaggerConfiguration/blob/master/swagger-ui.PNG)
