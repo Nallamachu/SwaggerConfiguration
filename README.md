@@ -1,7 +1,7 @@
 # SwaggerConfiguration
 Swagger configuration in Spring Boot Application
-To configure swagger in any of the SpringBoot application, we need to follow the below steps explained.
-1. We need to add required dependencies to the pom.xml file. Required dependencies mentioned below,
+To configure ```swagger``` in any of the ```SpringBoot``` application, we need to follow the below steps explained.
+1. We need to add required dependencies to the ```pom.xml``` file. Required dependencies mentioned below,
 
 **pom.xml**
 ```xml
@@ -18,7 +18,7 @@ To configure swagger in any of the SpringBoot application, we need to follow the
 			<scope>compile</scope>
 		</dependency>
 ```
-2. Create a class with any name under the config package and annotate with the @Configuration and @EnableSwagger2. I am using the name of SwaggerConfig, as mentioned below,
+2. Create a class with any name under the config package and annotate with the ```@Configuration``` and ```@EnableSwagger2```. I am using the name of ```SwaggerConfig```, as mentioned below,
 
 **Swagger2Config.java**
 ```java
@@ -69,3 +69,15 @@ public class HelloController {
 }
 ```
 ![Swagger-UI](https://github.com/Nallamachu/SwaggerConfiguration/blob/master/swagger-ui.PNG)
+
+If you would like to allow swagger to scan across all other packages in your project, you can use the below code while creating the ```Docket``` in ```SwaggerConfig```.
+```java
+@Bean
+public Docket api(){
+    return new Docket(DocumentationType.SWAGGER_2)
+            .select()
+            .apis(RequestHandlerSelectors.any())
+            .paths(PathSelectors.any())
+            .build();
+}
+```
