@@ -8,13 +8,13 @@ To configure ```swagger``` in any of the ```SpringBoot``` application, we need t
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
-			<version>2.6.1</version>
+			<version>2.9.2</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.6.1</version>
+			<version>2.9.2</version>
 			<scope>compile</scope>
 		</dependency>
 ```
