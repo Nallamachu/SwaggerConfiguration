@@ -42,7 +42,7 @@ public class Swagger2Config {
 
 You can access those API's through the link called, *http://<host>:<port>/v2/api-docs* with the default URL of *http://localhost:8080/v2/api-docs *
 
-We can also access the Swagger-UI with the link of *http://<host>:<port>/swagger-ui.html* with the default URL of *http://localhost:8080/swagger-ui.html *
+We can also access the Swagger-UI with the link of *http://host:port/swagger-ui.html* with the default URL of *http://localhost:8080/swagger-ui.html *
 	
 If you don't have any controllers defined in your application. For temporary you can use the below controller classes.
 
