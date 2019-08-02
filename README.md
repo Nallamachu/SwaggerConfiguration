@@ -40,9 +40,9 @@ public class Swagger2Config {
 ```
 **Note:** Swagger configuration has been completed. Please make sure you are passing proper package name of the controller. If you have already existing controllers with any rest api, it will be loaded when you are starting/restarting the application.
 
-You can access those API's through the link called, *http://host:port/v2/api-docs* with the default URL of *http://localhost:8080/v2/api-docs *
+You can access those API's through the link called, <b>http://host:port/v2/api-docs</b> with the default URL of <b>http://localhost:8080/v2/api-docs</b>
 
-We can also access the Swagger-UI with the link of *http://host:port/swagger-ui.html* with the default URL of *http://localhost:8080/swagger-ui.html *
+We can also access the Swagger-UI with the link of <b>http://host:port/swagger-ui.html</b> with the default URL of <b>http://localhost:8080/swagger-ui.html</b>
 	
 If you don't have any controllers defined in your application. For temporary you can use the below controller classes.
 
