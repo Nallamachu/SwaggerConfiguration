@@ -81,3 +81,46 @@ public Docket api(){
             .build();
 }
 ```
+
+# SWAGGER-3.0.0
+Follow the steps mentioned to configure the SWAGGER-3.0.0 version
+
+* for maven *
+```
+<dependency>
+   <groupId>io.springfox</groupId>
+   <artifactId>springfox-boot-starter</artifactId>
+   <version>3.0.0</version>
+</dependency><dependency>
+   <groupId>io.springfox</groupId>
+   <artifactId>springfox-swagger-ui</artifactId>
+   <version>3.0.0</version>
+</dependency>
+```
+
+* for gradle *
+```
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation "io.springfox:springfox-boot-starter:3.0.0"
+    compile "io.springfox:springfox-swagger-ui:3.0.0"
+}
+```
+
+* SwaggerConfiguration.java*
+```java
+@Configuration
+public class Swagger3Config {
+        @Bean
+	public Docket produceApi() {
+		return new Docket(DocumentationType.SWAGGER_2).select()
+				.apis(RequestHandlerSelectors.basePackage("com.springboot.swagger.controller"))
+				.build();
+	}
+}
+```
+
+accessing url for swagger 3 is http://localhost:9191/swagger-ui/index.html or http://localhost:9191/v2/api-docs
