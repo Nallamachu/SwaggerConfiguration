@@ -85,7 +85,7 @@ public Docket api(){
 # SWAGGER-3.0.0
 Follow the steps mentioned to configure the SWAGGER-3.0.0 version
 
-* for maven *
+** for maven **
 ```
 <dependency>
    <groupId>io.springfox</groupId>
@@ -98,7 +98,7 @@ Follow the steps mentioned to configure the SWAGGER-3.0.0 version
 </dependency>
 ```
 
-* for gradle *
+** for gradle **
 ```
 repositories {
     jcenter()
@@ -110,7 +110,7 @@ dependencies {
 }
 ```
 
-* SwaggerConfiguration.java*
+** SwaggerConfiguration.java **
 ```java
 @Configuration
 public class Swagger3Config {
@@ -123,4 +123,4 @@ public class Swagger3Config {
 }
 ```
 
-accessing url for swagger 3 is http://localhost:9191/swagger-ui/index.html or http://localhost:9191/v2/api-docs
+accessing url for swagger 3 is http://host:port/swagger-ui/index.html or http://host:port/v2/api-docs
